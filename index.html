@@ -12,53 +12,111 @@
     <style>
         /* font family */
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        .container{
+        body{
+            color: #21303B;
+            font-family: 'Work Sans', sans-serif;
             text-align: center;
         }
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
         h1{
-            font-size: 17px;
+          
+            font-size: 27px;
             font-weight: 700;
+            color: #C0A36E;
         }
         h2{
-            font-size: 12px;
-           
-        }
-        .col-left h2{
-            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #C1A36D;
         }
         .col-right h2{
             font-weight: 700;
         }
         h3{
-            font-size: 10px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 600;
         }
         p{
-            font-weight: 300;
-            font-size: 10px;
-        }
-        .col-left p{
-            font-size: 10px;
-        }
-        .col-right{
-            font-size: 11px;
+            font-weight: 300 ;
+            font-size: 18px;
+            margin-bottom: 0px;
         }
         span{
-            font-size: 100;
-            font-weight: 700;
+            
+            font-weight: 800;
             display: block;
+            color: #989A9A;
+            font-size: 20px;
+        }
+        .block{
+            margin-bottom: 20px;
+        }
+        .col-left h1{
+            margin-bottom: 40px;
+        }
+        .col-left .leaf{
+            margin-bottom: 10px;
+            width: 20px;
+        }
+        .logo{
+            width: 130px;
+        }
+        .footer-block h3{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #C1A36D;
+            -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+        }
+        .footer-block span{
+            font-size: 9px;
+            letter-spacing: -1px;
+            color:#515660;
+            font-weight: 500;
+        }
+        .col-right .date{
+            font-weight: 400;
+            font-size: 18px;
+            color: #515660;
+            margin-bottom: 30px;
+        }
+        .col-right h2{
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        .col-right .leaf{
+            width: 20px;
+            margin-bottom: 5px;
+        }
+        .col-right span{
+            font-size: 10px;
+            font-weight: 600;
+            color: #C0A36E;
+        }
+        .right-block-3{
+            font-weight: 900;
+        }
+        .right-block-3 .title-one{
+            font-weight: 900;
+        }
+        .right-block-3 .title-two{
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
     <div class="page">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-xs-6 col-left">
                     <h1>WEINEMPFEHLUNG</h1>
                     <div class="block">
                         <h3>2018 SAUVIGNON BLANC, RESERVE</h3>
-                        <p>Weingut Hiedler | Langenlois - Kamptal</p>
+                        <p  > Weingut Hiedler | Langenlois - Kamptal</p>
                         <span>€ 45,00</span>
                     </div>
                     <div class="block">
@@ -80,22 +138,18 @@
                     <h2>ZUSÄTZLICH TÄGLICH WÄHLBAR:</h2>
                     <div>
                         <p>Bouillon mit Frittaten oder klare Gemüsesuppe</p>
-                         <img src="images/leaf.png" alt="">
+                         <img class="leaf" src="images/leaf.png" alt="">
                     </div>
                     <div class="block">
                         <h3>WIENERSCHNITZEL MIT REIS UND PREISELBEEREN ENTRECOTE</h3>
                         <p>mit Kräuterbutter und hausgemachte Nudeln</p>
-                        <img src="images/leaf.png" alt="">
+                        <img class="leaf" src="images/leaf.png" alt="">
                         <p>Zitronensorbet mit Vodka</p>
                         <span></span>
                     </div>
-                    <img src="images/logo.png" alt="">
-                    <div class="block">
-                        <h3></h3>
-                        <p></p>
-                        <span></span>
-                    </div>
-                    <div class="">
+                    <img class="logo" src="images/logo.png" alt="">
+                  
+                    <div class="footer-block">
                         <h3>ALLERGENE</h3>
                         <span>Unsere Speisen enthalten von Natur aus allergene. <br>
                              Unsere Speisen enthalten von Natur aus allergene. 
@@ -103,24 +157,20 @@
                              Herr Lieglein informiert Sie gerne über die allergenen Zutaten
                             in unserem Menü</span>
                     </div>
-                    <div class="block">
-                        <h3></h3>
-                        <p></p>
-                        <span></span>
-                    </div>
+                  
                     
                 </div>
                 <div class="col-xs-6 col-right">
                     <h1>MENÜ</h1>
-                    <span>27.05.2022</span>
+                    <span class="date" >27.05.2022</span>
 
                     <div class="br-1">
                         <h2>VON UNSEREM BUFFET</h2>
                         <p>frische Salate und Dressings </p>
-                       <img src="images/leaf.png" alt="">
+                       <img class="leaf" src="images/leaf.png" alt="">
                        <h3>GEBÄCK VON DER ARLBERGER DORFBÄCKEREI</h3>
                        <p>mit Aufstrichen</p>
-                       <img src="images/leaf.png" alt="">
+                       <img class="leaf" src="images/leaf.png" alt="">
                        <h3>CARPACCIO VON DER BEETE</h3>
                        <p>mit Kren & Ziegenfrischkäse </p>
                     </div>
@@ -128,17 +178,17 @@
                         <h2>VORSPEISE</h2>
                         <h3>BEEF-TARTAR</h3>
                         <p>mit pochiertem Wachtelei und Kräuterbrot Suppe </p>
-                        <img src="images/leaf.png" alt="">
+                        <img class="leaf" src="images/leaf.png" alt="">
                         <h3>KNOBLAUCHCREMESUPPE MIT CROUTONS </h3>
                         <span>ODER</span>
                         <h3>„YELLOW-DRINK“ </h3>
                         <p>Grüner Apfel, Orange, Zucchini, Petersilwurzel & Zitrone</p>
                     </div>
 
-                    <div>
+                    <div class="right-block-3" >
                         <h2>HAUPTSPEISEN</h2>
-                        <h3>GEKOCHTER KALBSTAFELSPITZ</h3>
-                        <p>mit Apfelkren Cremespinat und Rösti</p>
+                        <h3 class="title-one" >GEKOCHTER KALBSTAFELSPITZ</h3>
+                        <p class="title-two" >mit Apfelkren Cremespinat und Rösti</p>
                         <span>ODER</span>
                         <h3>GEBRATENER RINDERRÜCKEN</h3>
                         <p>auf Zweigeltsauce Pastinakengratin</p>
